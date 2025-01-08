@@ -12,7 +12,17 @@
     <p>반품 신청시 상품의 상태를 사진으로 첨부해 주세요.</p>
     <hr>      
     <!-- Do it! 전송 버튼과 리셋 버튼 추가하기 -->    
-    
+    <input type="submit" value="전송">
+    <input type="reset" value="초기화">
+    <button onclick="form_submit()">전송</button>
   </form>
+
+  <script>
+    function form_submit() {
+      event.preventDefault();
+      console.log('폼전송...');   
+      document.forms[0].submit();
+     }
+  </script>
 </body>
 </html>
