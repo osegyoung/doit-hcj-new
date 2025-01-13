@@ -5,9 +5,26 @@
   <title>회원 가입</title>
   <link rel="stylesheet" href="css/register.css">
 </head>
+<style>
+  div{
+    text-align: ;
+  }
+  .container {
+    display: flex;
+  }
+  .center {
+    justify-content: center;
+  }
+  .loginfo>ul{
+    list-style-type: circle;
+  }
+  .person_info>ul {
+    list-style-type: square;
+  }
+</style>
 <body>
   <form id="signup">
-    <fieldset>
+    <fieldset class="loginfo">
       <legend>로그인 정보</legend>
       <ul>
         <li>
@@ -27,8 +44,8 @@
           <input id="level" name="level" type="text" readonly value="준회원">
         </li>
       </ul>
-    </fieldset>
-    <fieldset>
+    </fieldset >
+    <fieldset class="person_info">
       <legend>개인 정보</legend>
       <ul>
         <li>
@@ -45,9 +62,11 @@
         </li>  
       </ul>
     </fieldset>
+    <div class="container" >
     <fieldset>
-      <button type="submit"> 제출 </button> 
+      <button class="center" type="submit"> 제출 </button> 
     </fieldset>
+  </div>
   </form>
 </body>
 </html>

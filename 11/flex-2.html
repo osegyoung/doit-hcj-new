@@ -9,20 +9,30 @@
       display:flex;  /* 플렉스 컨테이너 지정 */
       justify-content: row; /* 주축의 방향을 지정 */
       background-color:#eee;
-      border:1px solid #222;
+      border:1px solid #eee;
       margin-bottom:30px;
     }
-    .box {
+    .box:nth-child(odd) {
       padding:5px 45px;
       margin:5px;   
 	  	width:80px;
-      background-color:#222;   
-    }                
+      background-color:#2f3a9bbe;   
+    }
+    .box:nth-child(even) {
+      padding:5px 45px;
+      margin:5px;   
+	  	width:80px;
+      background-color:#af2481c2;   
+    }
+                  
     p {
       color:#fff;
       text-align: center;
     }
     /* Do it! 줄바꿈을 지정하는 #opt1 ~ #opt3 스타일 만들기 */
+    #opt1 { flex-wrap:  nowrap;}
+    #opt2 {flex-wrap: wrap;}
+    #opt3 {flex-wrap: wrap-reverse;}
 
   </style>
 </head>

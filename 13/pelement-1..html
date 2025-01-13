@@ -21,6 +21,21 @@
     }
 
     /* Do it! 단락의 첫번째 글자에 스타일 지정하기 */
+    p::first-line{
+      font-size: 2em;
+      font-weight: bold;
+    }
+    
+    h1::before {
+      content: "*";
+      color: red;
+      margin-right: 5px;
+    }
+
+    h1::after {
+      content: 💕;
+      margin-left: 10px;
+    }
     
   </style>
 </head>

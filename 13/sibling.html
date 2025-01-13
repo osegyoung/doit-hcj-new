@@ -20,15 +20,47 @@
     }
 
     /* Do it!  h1 요소와 형제인 모든 p 요소의 스타일 바꾸기 */
-
+    section >p {
+      background-color: black;
+      font-size: small;
+      color: aqua;
+    }
+  
+    div>p{
+      font-size: medium;
+      color: blue;
+      background-color: dodgerblue;
+    }
+    h1 {
+      font-size: large;
+    }
   </style>
 </head>
 <body>
   <section>
-    <h1>예약 방법 & 이용 요금</h1>
+    <h1 class="reservation">예약 방법 & 이용 요금</h1>
     <p>아직 온라인 예약 신청이 준비되어 있지 않습니다. <br>전화(xxx-xxxx-xxxx)로 문의 바랍니다.</p>
     <p>가족실(2~4인) : 60,000원/일</p>
     <p>도미토리(4인 공용) : 25,000원/일</p>
   </section>    
+  <div>
+    <h1>예약 방법 & 이용 요금</h1>
+    <p>아직 온라인 예약 신청이 준비되어 있지 않습니다. <br>전화(xxx-xxxx-xxxx)로 문의 바랍니다.</p>
+    <p>가족실(2~4인) : 60,000원/일</p>
+    <p>도미토리(4인 공용) : 25,000원/일</p>
+  </div>
+  <script>
+    // variable(변수)
+    let myHeight = 190;
+    let myAge = 201;
+    let myName = "홍길동";
+    let myItem = document.querySelector('section h1+p'); //선택자.
+    // myItem.addEventListener('click',function() { myItem.remove();});
+    myItem.addEventListener('click',function() { alert('클릭했습니다!');})
+
+    console.log("Hello World");// 개발자도구 -> console탭 - 출력.
+    console.log(myHeight+myHeight);
+    console.log(myItem);
+  </script>
 </body>
 </html>

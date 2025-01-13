@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ko">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,6 +14,7 @@
       height: 100vh;
       gap: 20px;
     }
+
     .container {
       width: 300px;
       padding: 20px;
@@ -22,9 +24,33 @@
     }
 
     /* Do it! 가상 선택자를 사용해 항목 선택하기 */
+    .container>div:nth-child(2){ */
+      border: 2px solid #ccc;
+    }
+    .container>div:nth-of-type(2){
+      border: 2px solid #222;
+    }
+    .container:nth-child(1) {
+      border: 2px solid
+    }
 
+     .container :first-child { 
+      background-color: #fc2;
+      border: 2px solid green;
+    }
+
+    .container :last-child {
+      background-color: #2cf;
+      border: 2px solid black;
+    } 
+
+     .container div:only-child {
+      background-color: #f0c8fc;
+      border: 2px solid blue;
+    }
   </style>
 </head>
+
 <body>
   <div class="container">
     <p>첫 번째</p>
@@ -36,4 +62,5 @@
     <div>혼자~</div>
   </div>
 </body>
+
 </html>

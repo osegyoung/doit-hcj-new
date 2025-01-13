@@ -17,6 +17,10 @@
 	}
 
 	/* Do it! target 속성 값이 _blank인 a 요소에만 스타일 지정하기 */
+	 a[target='_parent']{
+		background: url(images/newwindow.png);
+	}
+
 
 </style>
 </head>
@@ -24,8 +28,8 @@
 <body>
 	<ul>
 		<li><a href="hhttps://html.spec.whatwg.org" target="_blank">HTML</a></li>
-		<li><a href="https://www.w3.org/TR/selectors">CSS Selector Level 3</a></li>
-		<li><a href="https://www.w3.org/TR/css3-mediaqueries">미디어쿼리</a></li>		
+		<li><a href="https://www.w3.org/TR/selectors" target="_parent"> CSS Selector Level 3</a></li>
+		<li><a href="https://www.w3.org/TR/css3-mediaqueries" target="_self">미디어쿼리</a></li>		
 	</ul>
   </body>
  </html>
